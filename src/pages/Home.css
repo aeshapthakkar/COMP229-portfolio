@@ -1,0 +1,97 @@
+/* Reset the body to prevent Flexbox from affecting the layout */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Ensure the navbar stays in its original styling */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+nav a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #575757;
+}
+
+/* Center the frame on the page specifically, not affecting the whole body */
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;          /* Full viewport height */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Frame styling */
+.frame {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;             /* Ensure frame is centered horizontally */
+}
+
+/* Image styling */
+img {
+    max-width: 80%;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+}
+
+/* Button styling */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .frame {
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    img {
+        max-width: 90%;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        padding: 10px;
+        text-align: center;
+    }
+}

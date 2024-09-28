@@ -1,0 +1,35 @@
+/* Higher specificity to ensure navbar styles are applied universally */
+nav.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1000;
+  }
+  
+  nav.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 10px;
+  }
+  
+  nav.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+  }
+  
+  nav.navbar ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    nav.navbar ul {
+      flex-direction: column;
+    }
+  }
+  
